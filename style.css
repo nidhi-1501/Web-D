@@ -1,0 +1,162 @@
+/* ---------------- GLOBAL STYLE ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Slide-Up Animation */
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ---------------- HEADER ---------------- */
+header {
+    background: #0a3d62;
+    padding: 15px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+header .logo:hover {
+    color: #82ccdd;
+    transform: scale(1.05);
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #82ccdd;
+    border-bottom: 2px solid #82ccdd;
+    padding-bottom: 3px;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to bottom right, #0a3d62, #1e5799);
+    color: white;
+    animation: slideUp 1s ease-in-out;
+}
+
+.hero span {
+    color: #82ccdd;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* ---------------- SECTION BOX ---------------- */
+.section {
+    padding: 60px 40px;
+    background: white;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    animation: slideUp 0.8s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect on section */
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+/* Section Titles */
+.section h2 {
+    color: #0a3d62;
+    border-left: 5px solid #82ccdd;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* ---------------- SKILLS ---------------- */
+.skills-box {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1;
+    min-width: 260px;
+    background: #eaf6ff;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Creative Hover */
+.skill:hover {
+    transform: scale(1.05);
+    background: #d8efff;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.skill h3 {
+    color: #0a3d62;
+    margin-bottom: 10px;
+}
+
+/* ---------------- LISTS ---------------- */
+ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background: #0a3d62;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+footer:hover {
+    background: #07405c;
+}
